@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+[class^='dado-']{
+    display:flex;
+    width:100px;
+    height: 100px;
+    background-color: black;
+    margin:10px;
+    padding:5px;
+}
+
+.punto{
+    background-color: white;
+    border-radius: 100%;
+    width:20px;
+    margin:5px;
+}
+
+.dado-1{
+    justify-content: center;
+    align-items: center;
+}
+
+.dado-2{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.dado-2 .punto:nth-child(odd){
+    align-self: flex-start;
+}
+
+.dado-3{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dado-3 .punto:nth-child(1){
+    align-self: flex-start;
+}
+
+.dado-3 .punto:nth-child(2){
+    align-self: center;
+}
+
+.dado-3 .punto:nth-child(3){
+    align-self: flex-end;
+}
+
+.dado-4 ,.dado-5, .dado-6{
+    display:flex;
+    justify-content: space-between;
+}
+
+.dado-4 .left, .dado-5 .left, .dado-6 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dado-4 .right, .dado-5 .right, .dado-6 .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dado-5 .punto{
+    align-self: center;
+}
+
+
+
+
+
